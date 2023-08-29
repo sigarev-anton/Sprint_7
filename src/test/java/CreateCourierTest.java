@@ -98,7 +98,7 @@ public class CreateCourierTest {
                 .body(json)
                 .when()
                 .post("api/v1/courier");
-                response.then().assertThat().statusCode(409);//.and().assertThat().body(equalTo("{\"code\":409,\"message\":\"Этот логин уже используется. Попробуйте другой.\"}"));
+                response.then().assertThat().statusCode(409);
     }
 
     @Step("CreateCourierMissingParameters")
